@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* Logo */
+.logo img {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-top: -10%;
+    border-radius: 30px;
+}
+
+body {
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1)); */
+    /* background-attachment: fixed; */
+    background-color: #d3d3d3;
+
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.header {
+    /* min-height: 100vh;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover; */
+    background-color: #d3d3d3;
+
+}
+
+.navbar {
+    width: 100%;
+    color: #130505;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+.navbar .logo {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-menu ul li {
+    list-style: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: #111111;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-menu ul li:hover {
+    background-color: #ed6a0c;
+    transition: 0.5s ease;
+    border-radius: 25px;
+}
+
+.content-section {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px 60px;
+    flex-direction: column;
+
+}
+
+.content-section h1 {
+    color: #2f3542;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+
+}
+
+span {
+    color: #ed6a0c;
+}
+
+.content-section p {
+    color: #111111;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+
+
+
+}
+
+.content-section .button {
+
+    margin-top: 45px;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.content-section .button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 50px;
+    background-color: rgb(83, 83, 99);
+    border-radius: 6px;
+    padding: 14px 25px;
+    letter-spacing: 1.5px;
+    ;
+    border-radius: 50px;
+
+}
+
+.content-section .button a:hover {
+    background-color: #ed6a0c;
+    transition: 0.5 ease;
+
+
+}
+
+.container img {
+    display: flex;
+    float: right;
+    width: 40%;
+    height: 50%;
+
+
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 28px;
+    right: 60px;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 22px;
+    width: 32px;
+}
+
+.toggle-btn .bar {
+    height: 4px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .toggle-btn {
+        display: flex;
+        z-index: 2;
+
+    }
+
+    .nav-menu ul {
+        width: 100%;
+        background-color: #508089;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 10px;
+
+    }
+
+    .nav-menu ul li a {
+        font-size: 19px;
+    }
+
+    .content-section h1 {
+        font-size: 50px;
+        
+    }
+
+    .content-section p {
+        font-size: 15px;
+        text-align:justify;
+
+
+    }
+
+    .content-section .button a {
+        font-size: 10px;
+        padding: 15px 15px;
+    }
+    .logo img{
+    
+    width: 70px;
+    height: 70px;
+    margin-top: -10%;
+    border-radius: 30px;
+
+    }
+    
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .content-section .button {
+
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+
+
+    }
+
+    .container {
+        display: block;
+        background-image: none;
+    }
+
+    .container img {
+        width: 50vw;
+        margin-top: 40%;
+    }
+
+
+}
